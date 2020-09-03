@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="51dp"
+        android:text="Constraint Layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nisl ac vehicula lobortis. Morbi hendrerit felis laoreet elit commodo posuere. Pellentesque non pellentesque felis, eget pharetra justo. Maecenas aliquet lobortis tincidunt. Etiam molestie facilisis urna, vel blandit orci sagittis a. Phasellus vulputate dictum lorem, ut malesuada ex efficitur ut. Ut vitae magna blandit, varius tellus nec, gravida lacus. Cras et arcu at ligula molestie efficitur quis eget neque.  Praesent placerat finibus risus eget malesuada. Etiam lobortis, felis et varius auctor, mi risus accumsan massa, non placerat felis odio pulvinar lectus. Nullam imperdiet laoreet quam, sit amet feugiat ex rhoncus in. Curabitur sollicitudin ex non feugiat rutrum. Integer nec arcu convallis, molestie justo at, suscipit ipsum. Quisque nunc arcu, hendrerit sit amet ante sit amet, aliquet lacinia libero. Aliquam molestie mollis velit, ut lacinia lacus. Sed suscipit hendrerit tellus, vitae luctus risus interdum ac. Etiam a convallis magna. Sed a lectus a erat vehicula placerat at ac libero. Nulla mattis nunc neque, faucibus vehicula ex rutrum et. Integer et mattis turpis. Etiam a dolor pellentesque, scelerisque arcu in, luctus odio. Nunc in aliquet neque. "
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@android:string/ok"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ball_100x100" />
+</androidx.constraintlayout.widget.ConstraintLayout>
